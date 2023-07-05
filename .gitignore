@@ -1,2 +1,4 @@
 node_modules
 .dev
+.angular
+.node_modules
