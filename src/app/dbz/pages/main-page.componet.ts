@@ -1,3 +1,4 @@
+import { Character } from './../interfaces/character.interface';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,18 @@ import { Component } from '@angular/core';
 })
 
 export class MainPageComponent {
-    
+    public characters: Character[] = [
+    {
+        name: 'Goku',
+        power: 10500
+    },
+    {
+        name: 'Piccolo',
+        power: 6000
+    },
+    {
+        name: 'Vegeta',
+        power: 9000
+    }
+];
 }
