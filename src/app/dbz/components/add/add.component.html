@@ -1,9 +1,23 @@
 <h4 class="text-primary">Add DBZ Character</h4>
 
-<form class="row">
-    <input type="text" class="form-control mb-2" placeholder="Name">
-    <input type="number" class="form-control mb-2" placeholder="Power">
-    <button type="button" class="btn btn-outline-primary">
+<form class="row" (ngSubmit)="emitCharacter()">
+    <input 
+        type="text" 
+        [(ngModel)]="character.name"
+        name="name"
+        class="form-control mb-2" 
+        placeholder="Name"
+    >
+    <input 
+        type="number" 
+        [(ngModel)]="character.power"
+        name="power"
+        class="form-control mb-2" 
+        placeholder="Power"
+    >
+    <button type="submit" class="btn btn-outline-primary" >
         Add
     </button>
+    <br>
+    <!-- <pre>{{ character | json }}</pre> -->
 </form>
